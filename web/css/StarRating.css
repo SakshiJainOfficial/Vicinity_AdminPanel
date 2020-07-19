@@ -1,0 +1,15 @@
+.checked {
+  color: orange;
+}
+/* 
+    Document   : StarRating
+    Created on : Apr 26, 2020, 3:39:58 PM
+    Author     : sakshi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
