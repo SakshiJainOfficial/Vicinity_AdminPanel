@@ -4,9 +4,17 @@
         <servlet-name>RequestPendingServlet</servlet-name>
         <servlet-class>com.vicinity_AdminPanel.Controller.RequestPendingServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GardensRegisteredServlet</servlet-name>
+        <servlet-class>com.vicinity_AdminPanel.Controller.GardensRegisteredServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RequestPendingServlet</servlet-name>
         <url-pattern>/RequestPendingServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GardensRegisteredServlet</servlet-name>
+        <url-pattern>/GardensRegisteredServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

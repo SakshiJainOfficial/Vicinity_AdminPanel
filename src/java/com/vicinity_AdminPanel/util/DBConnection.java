@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 public class DBConnection {
      public static Connection createConnection() {
         Connection con = null;
-        String url = "jdbc:mysql://localhost:3306/Vicinity?zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=false"; 
+        String url = "jdbc:mysql://localhost:3306/vicinity?zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=false"; 
         String username = "root"; //MySQL username
         String password = "root"; //MySQL password
         

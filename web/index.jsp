@@ -91,8 +91,8 @@
 
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right" style="display: inline-block">
-                                <li><a href="Gardens_Registered.jsp"><b>Garden Registered</b></a></li>
-                                <li><a href="RequestPendingServlet.java"><b>Requests Pending</b></a></li>
+                                <li><a href="GardensRegisteredServlet"><b>Garden Registered</b></a></li>
+                                <li><a href="RequestPendingServlet"><b>Requests Pending</b></a></li>
 <!--                                <li><a href="#">Page</a></li>
                                 <li><a href="#">Page</a></li>-->
                             </ul>

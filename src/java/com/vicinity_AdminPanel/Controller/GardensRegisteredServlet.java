@@ -1,8 +1,12 @@
-
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package com.vicinity_AdminPanel.Controller;
 
 import com.vicinity_AdminPanel.util.DBConnection;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -14,8 +18,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class RequestPendingServlet extends HttpServlet {
-   @Override
+/**
+ *
+ * @author sakshi
+ */
+public class GardensRegisteredServlet extends HttpServlet {
+
+    @Override
    protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         Connection con = null;
@@ -42,7 +51,7 @@ public class RequestPendingServlet extends HttpServlet {
 
         HttpSession session = request.getSession();
         session.setAttribute("requestPendingList", Rows1);
-        response.sendRedirect("Requests_Pending.jsp");
+        response.sendRedirect("Gardens_Registered.jsp");
 
 
    }
