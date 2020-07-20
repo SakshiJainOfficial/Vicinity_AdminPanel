@@ -36,7 +36,7 @@ public class GardensRegisteredServlet extends HttpServlet {
             con = DBConnection.createConnection();
             
             statement = con.createStatement();
-            resultSet = statement.executeQuery("Select * from gardendetails where flag=0");
+            resultSet = statement.executeQuery("Select * from gardendetails where flag=1");
 
             while (resultSet.next()) {    
                 ArrayList row = new ArrayList();
