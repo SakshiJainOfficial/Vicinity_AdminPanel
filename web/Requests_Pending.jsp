@@ -117,10 +117,10 @@
             <div class="card-body">
                 <h5 class="card-title">Special title treatment</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <form action="AcceptServlet.java" method="post" >
+                <form method="post">
                 <button type="button" class="btn btn-primary garden" data-toggle="modal" data-target="#staticBackdrop" data-id="Images/<%= Rows1.get(i).get(1)%>.png" data-todo='{"id1":"<%= Rows1.get(i).get(0)%>","gardenname":"<%= Rows1.get(i).get(1)%>","ownername":"<%= Rows1.get(i).get(2)%>","yearofestablishment":"<%= Rows1.get(i).get(3)%>","email":"<%= Rows1.get(i).get(4)%>","phoneno":"<%= Rows1.get(i).get(5)%>","price":"<%= Rows1.get(i).get(6)%>","address":"<%= Rows1.get(i).get(7)%>","city":"<%= Rows1.get(i).get(8)%>","landmark":"<%= Rows1.get(i).get(9)%>","pincode":"<%= Rows1.get(i).get(10)%>","totalbookingstilldate":"<%= Rows1.get(i).get(11)%>","acrooms":"<%= Rows1.get(i).get(12)%>","nonacrooms":"<%= Rows1.get(i).get(13)%>","wifi":"<%= Rows1.get(i).get(14)%>","catering":"<%= Rows1.get(i).get(15)%>"}'>Details</button>
-                <button type="submit" class="btn btn-success" >Accept</button> 
-                <button type="button" class="btn btn-danger" >Decline</button> 
+                <button type="submit" class="btn btn-success" formaction="AcceptServlet.java" name="acceptId" value="<%= Rows1.get(i).get(0)%>">Accept</button> 
+                <button type="submit" class="btn btn-danger" formaction="DeclineServlet">Decline</button> 
                 </form>
             </div>
         </div>

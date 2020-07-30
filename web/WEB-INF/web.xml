@@ -12,6 +12,10 @@
         <servlet-name>AcceptServlet</servlet-name>
         <servlet-class>com.vicinity_AdminPanel.Controller.AcceptServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DeclineServlet</servlet-name>
+        <servlet-class>com.vicinity_AdminPanel.Controller.DeclineServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RequestPendingServlet</servlet-name>
         <url-pattern>/RequestPendingServlet</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>AcceptServlet</servlet-name>
         <url-pattern>/AcceptServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeclineServlet</servlet-name>
+        <url-pattern>/DeclineServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
