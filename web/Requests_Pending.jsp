@@ -32,6 +32,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
+                        <img id="myImage" class="img-responsive" src="" alt="" height="30%" width="30%">
 
                         <label><b>Garden ID</b>-</label>     
                         <input type="hidden" name="eventId1" id="eventId1"/>
@@ -59,7 +60,7 @@
                         <br>
                         <label><b>Price</b>-</label>     
                         <input type="hidden" name="eventId7" id="eventId7"/>
-                        <span id="idHolder6"></span>
+                        <span id="idHolder7"></span>
                         <br>
                         <label><b>Address</b>-</label>     
                         <input type="hidden" name="eventId8" id="eventId8"/>
@@ -93,13 +94,12 @@
                         <input type="hidden" name="eventId15" id="eventId15"/>
                         <span id="idHolder15"></span>
                         <br>
-                        
+
                         <label><b>Catering</b>-</label>     
                         <input type="hidden" name="eventId16" id="eventId16"/>
                         <span id="idHolder16"></span>
                         <br>
-                        <!--<img src="C:\\Users\\sakshi\\Documents\\NetBeansProjects\\Vicinity\\web\\Images\\  .jpeg" width="55%" height="55%" style="border: 2px solid black">-->
-                       
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -116,13 +116,13 @@
             <div class="card-body">
                 <h5 class="card-title">Special title treatment</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <button type="button" class="btn btn-primary garden" data-toggle="modal" data-target="#staticBackdrop" data-todo='{"id":"<%= Rows1.get(i).get(0)%>","gardenname":"<%= Rows1.get(i).get(1)%>","ownername":"<%= Rows1.get(i).get(2)%>","yearofestablishment":"<%= Rows1.get(i).get(3)%>","email":"<%= Rows1.get(i).get(4)%>","phoneno":"<%= Rows1.get(i).get(5)%>","price":"<%= Rows1.get(i).get(6)%>","address":"<%= Rows1.get(i).get(7)%>","city":"<%= Rows1.get(i).get(8)%>","landmark":"<%= Rows1.get(i).get(9)%>","pincode":"<%= Rows1.get(i).get(10)%>","totalbookingstilldate":"<%= Rows1.get(i).get(11)%>","acrooms":"<%= Rows1.get(i).get(12)%>","nonacrooms":"<%= Rows1.get(i).get(13)%>","wifi":"<%= Rows1.get(i).get(14)%>","catering":"<%= Rows1.get(i).get(15)%>"}'>Details</button> <button type="button" class="btn btn-success" data-toggle="modal" data-target="#staticBackdrop">Accept</button>  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">Decline</button> 
+                <button type="button" class="btn btn-primary garden" data-toggle="modal" data-target="#staticBackdrop" data-id="Images/<%= Rows1.get(i).get(1)%>.png" data-todo='{"id1":"<%= Rows1.get(i).get(0)%>","gardenname":"<%= Rows1.get(i).get(1)%>","ownername":"<%= Rows1.get(i).get(2)%>","yearofestablishment":"<%= Rows1.get(i).get(3)%>","email":"<%= Rows1.get(i).get(4)%>","phoneno":"<%= Rows1.get(i).get(5)%>","price":"<%= Rows1.get(i).get(6)%>","address":"<%= Rows1.get(i).get(7)%>","city":"<%= Rows1.get(i).get(8)%>","landmark":"<%= Rows1.get(i).get(9)%>","pincode":"<%= Rows1.get(i).get(10)%>","totalbookingstilldate":"<%= Rows1.get(i).get(11)%>","acrooms":"<%= Rows1.get(i).get(12)%>","nonacrooms":"<%= Rows1.get(i).get(13)%>","wifi":"<%= Rows1.get(i).get(14)%>","catering":"<%= Rows1.get(i).get(15)%>"}'>Details</button> <button type="button" class="btn btn-success" >Accept</button>  <button type="button" class="btn btn-danger" >Decline</button> 
             </div>
         </div>
         <%}%>
         <br>
         <script type="text/javascript">$(document).on("click", ".garden", function() {
-                var eventId1 = $(this).data('todo').id;
+                var eventId1 = $(this).data('todo').id1;
                 $('#idHolder1').html(eventId1);
                 var eventId2 = $(this).data('todo').gardenname;
                 $('#idHolder2').html(eventId2);
@@ -134,26 +134,29 @@
                 $('#idHolder5').html(eventId5);
                 var eventId6 = $(this).data('todo').phoneno;
                 $('#idHolder6').html(eventId6);
-                 var eventId7 = $(this).data('todo').price;
+                var eventId7 = $(this).data('todo').price;
                 $('#idHolder7').html(eventId7);
-                 var eventId8 = $(this).data('todo').address;
+                var eventId8 = $(this).data('todo').address;
                 $('#idHolder8').html(eventId8);
-                 var eventId9 = $(this).data('todo').city;
+                var eventId9 = $(this).data('todo').city;
                 $('#idHolder9').html(eventId9);
-                 var eventId10 = $(this).data('todo').landmark;
+                var eventId10 = $(this).data('todo').landmark;
                 $('#idHolder10').html(eventId10);
-                 var eventId11 = $(this).data('todo').pincode;
+                var eventId11 = $(this).data('todo').pincode;
                 $('#idHolder11').html(eventId11);
-                 var eventId12= $(this).data('todo').totalbookingstilldate;
+                var eventId12 = $(this).data('todo').totalbookingstilldate;
                 $('#idHolder12').html(eventId12);
-                 var eventId13= $(this).data('todo').acrooms;
+                var eventId13 = $(this).data('todo').acrooms;
                 $('#idHolder13').html(eventId13);
-                 var eventId14= $(this).data('todo').nonacrooms;
+                var eventId14 = $(this).data('todo').nonacrooms;
                 $('#idHolder14').html(eventId14);
-                 var eventId15= $(this).data('todo').wifi;
+                var eventId15 = $(this).data('todo').wifi;
                 $('#idHolder15').html(eventId15);
-                 var eventId16= $(this).data('todo').catering;
+                var eventId16 = $(this).data('todo').catering;
                 $('#idHolder16').html(eventId16);
+                var myImageId = $(this).data('id');
+                $(".modal-body #myImage").attr("src", myImageId);
+                
             });
         </script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

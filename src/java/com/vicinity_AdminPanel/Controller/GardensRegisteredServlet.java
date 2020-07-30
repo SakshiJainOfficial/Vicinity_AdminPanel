@@ -40,7 +40,7 @@ public class GardensRegisteredServlet extends HttpServlet {
 
             while (resultSet.next()) {    
                 ArrayList row = new ArrayList();
-                for (int i = 1; i <=18; i++) {
+                for (int i = 1; i <=19; i++) {
                     row.add(resultSet.getString(i));
                 }
                 Rows1.add(row);
