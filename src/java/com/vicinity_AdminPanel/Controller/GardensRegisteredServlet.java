@@ -50,7 +50,7 @@ public class GardensRegisteredServlet extends HttpServlet {
         }
 
         HttpSession session = request.getSession();
-        session.setAttribute("requestPendingList", Rows1);
+        session.setAttribute("gardensRegisteredList", Rows1);
         response.sendRedirect("Gardens_Registered.jsp");
 
 
