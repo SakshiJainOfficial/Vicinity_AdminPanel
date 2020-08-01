@@ -20,9 +20,10 @@ public class DeclineServlet extends HttpServlet {
             throws ServletException, IOException {
         PrintWriter out=response.getWriter();
         String deleteId =request.getParameter("deleteId");
+                   
         Connection con = null;
         PreparedStatement ps = null;
-        try {
+        try {  
             con = DBConnection.createConnection();
             String query = "Delete from gardendetails where gardenId =?";
             ps = con.prepareStatement(query);
@@ -34,6 +35,8 @@ public class DeclineServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        
        response.setHeader("Cache-Control", "no-cache");
        response.setHeader("Cache-Control", "no-store");
        response.setHeader("Pragma", "no-cache");
